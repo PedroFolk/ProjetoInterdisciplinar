@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.inicio">
+   <left>
+      <VBox alignment="CENTER" fillWidth="false" prefHeight="520.0" prefWidth="248.0" spacing="10.0" styleClass="vbox" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@do-utilizador.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+               <effect>
+                  <ColorAdjust brightness="0.45" />
+               </effect>
+            </ImageView>
+            <Separator prefHeight="8.0" prefWidth="134.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Separator>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Label fx:id="usuario" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="raLabel" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER" fillHeight="false" prefHeight="75.0" prefWidth="154.0" spacing="50.0">
+                     <children>
+                        <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: transparent;">
+                           <padding>
+                              <Insets top="50.0" />
+                           </padding>
+                           <graphic>
+                              <ImageView fitHeight="150.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sair.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust brightness="0.69" />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" />
+         </effect>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="botaoDica" layoutX="81.0" layoutY="413.0" mnemonicParsing="false" onAction="#Dica" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="93.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sor_1.png" />
+                     </image>
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" spread="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="dialogLabel" alignment="CENTER" layoutX="203.0" layoutY="435.0" prefHeight="70.0" prefWidth="426.0" style="-fx-border-color: #616161; -fx-border-radius: 0 25 25 25;" text="Clique em mim para usar (3 dicas por nivel)" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="fechar" layoutX="634.0" layoutY="19.0" mnemonicParsing="false" onAction="#sair" prefHeight="24.0" prefWidth="24.0" styleClass="button-exit" text="X">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <GridPane alignment="CENTER" layoutX="63.0" layoutY="160.0" prefHeight="209.0" prefWidth="498.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="RespA" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#RespA" prefHeight="96.0" prefWidth="228.0" styleClass="button-resp" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="RespB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#RespB" prefHeight="96.0" prefWidth="228.0" styleClass="button-resp" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="RespC" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#RespC" prefHeight="96.0" prefWidth="228.0" styleClass="button-resp" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="RespD" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#RespD" prefHeight="96.0" prefWidth="228.0" styleClass="button-resp" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </GridPane>
+            <Button fx:id="nextQuestion" layoutX="604.0" layoutY="247.0" mnemonicParsing="false" onAction="#nextQuestion" text="-&gt;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <HBox alignment="CENTER" layoutX="-1.0" layoutY="43.0" prefHeight="100.0" prefWidth="672.0">
+               <children>
+                  <Label fx:id="Perg" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

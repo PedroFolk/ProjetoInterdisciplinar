@@ -1,0 +1,59 @@
+.root{
+    -fx-background-color: #778ea6;
+    -fx-background-insets: 0, 0 1 1 0;
+    -fx-background-radius: 15;
+}
+.label{
+    -fx-text-fill: #111111;
+}
+.button{
+    
+    -fx-background-color: #6fbbd3;
+    -fx-text-fill: rgb(255, 255, 255);
+}
+.button-different{
+    -fx-text-fill: #6fbbd3;
+}
+.button-different:hover{
+    -fx-text-fill: rgb(26, 116, 144);
+}
+
+.toggle-button{
+    -fx-background-color: rgba(0, 0, 0, 0.071);
+    -fx-background-radius: 5px;
+    -fx-border-color: #fff;
+    -fx-border-radius: 5px;
+}
+.vbox{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 15 25 25 15;
+}
+.button:hover{
+    -fx-background-color: #30add3;
+    -fx-text-fill: rgb(22, 22, 22);
+}
+
+.text-field{
+    -fx-background-color: #EDEDED;
+    -fx-text-fill: #A9A9A9;
+    -fx-prompt-text-fill: #A9A9A9;
+
+}
+.password-field{
+    -fx-background-color: #EDEDED;
+    -fx-text-fill: #A9A9A9;
+
+}
+.separator *.line{
+    -fx-border-color: #313131;
+}
+
+.button-resp{
+    -fx-background-color: #91d5ea;
+    -fx-background-radius: 15;
+}
+.button-different:default{
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-background-color: #6fd388;
+
+}

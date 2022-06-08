@@ -1,0 +1,56 @@
+.root{
+    -fx-background-color: #29282c;
+    -fx-background-insets: 0, 0 1 1 0;
+    -fx-background-radius: 15;
+}
+.button-exit{
+    -fx-background-radius: 45;
+}
+
+.label{
+    -fx-text-fill: #fff;
+}
+.button{
+    -fx-background-color: #f7bb0e;
+    -fx-text-fill: rgb(0, 0, 0);
+}
+.button-different{
+    -fx-text-fill: #f7bd0e9d;
+}
+.button-differen:hover{
+    -fx-text-fill: #fff;
+}
+.button-resp{
+    -fx-background-color: #f5d576;
+    -fx-background-radius: 15;
+}
+.button-resp:default{
+    -fx-background-color: #f2c53d;
+
+}
+.vbox{
+    -fx-background-color: #313131;
+    -fx-background-radius: 15 25 25 15;
+}
+.button:hover{
+    -fx-background-color: f7bb0e;
+    -fx-text-fill: #fff;
+}
+
+.text-field{
+    -fx-background-color: #fffffb;
+    -fx-text-fill: #29282c;
+}
+.password-field{
+    -fx-background-color: #fffffb;
+    -fx-text-fill: #29282c;
+
+}
+.toggle-button{
+    -fx-background-color: transparent;
+    -fx-border-color: #fff;
+    -fx-border-radius: 5px;
+}
+.separator *.line{
+    -fx-border-color: #fff;
+}
