@@ -1,6 +1,6 @@
 # ProjetoInterdisciplinar
 
-## Feito por:
+**Feito por:
 - Leonardo Taguchi Agata
 - Guilherme Alves Soares
 - Pedro Henrique Doy
