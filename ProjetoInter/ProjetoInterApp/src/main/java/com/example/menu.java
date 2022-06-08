@@ -11,7 +11,8 @@ import javafx.scene.layout.BorderPane;
 public class menu {
 
 
-    
+    @FXML
+    private Button Regras;
 
     @FXML
     private Button credtios;
@@ -45,6 +46,10 @@ public class menu {
 
     Dados dados;
 
+    @FXML
+    void irRegras(ActionEvent event) throws IOException{
+        App.setRoot("regras");
+    }
 
     @FXML
     void profRi(ActionEvent event) {
